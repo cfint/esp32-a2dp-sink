@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := app-template
+PROJECT_NAME := esp32-a2dp-sink
 
 include $(IDF_PATH)/make/project.mk
 
