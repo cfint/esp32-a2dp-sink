@@ -1,0 +1,3 @@
+[submodule "components/ESP32-A2DP"]
+	path = components/ESP32-A2DP
+	url = https://github.com/cfint/ESP32-A2DP.git
