@@ -15,6 +15,17 @@ static const char *TAG = "main";
 BluetoothA2DPSink a2dp_sink;
 
 
+void bits_per_sample_cb(uint8_t bit_depth)
+{
+    ESP_LOGI(TAG, "%s: bit_depth = %d", __func__, bit_depth);
+
+    if (bit_depth == 32) {
+        a2dp_sink.set_swap_lr_channels(true);
+    } else {
+        a2dp_sink.set_swap_lr_channels(false);
+    }
+}
+
 void setup() {
   a2dp_sink.activate_pin_code(false);
 
@@ -57,6 +68,8 @@ void setup() {
   };
   a2dp_sink.set_pin_config(pin_config);
 #endif
+
+  a2dp_sink.set_bps_callback(bits_per_sample_cb);
 
   a2dp_sink.start("InternalDAC", false);
 }
