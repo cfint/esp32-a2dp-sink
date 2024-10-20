@@ -1,0 +1,6 @@
+[submodule "components/ESP32-A2DP"]
+	path = components/ESP32-A2DP
+	url = https://github.com/cfint/ESP32-A2DP.git
+[submodule "arduino-audio-tools"]
+	path = arduino-audio-tools
+	url = https://github.com/cfint/arduino-audio-tools.git
