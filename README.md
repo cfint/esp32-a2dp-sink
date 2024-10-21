@@ -5,7 +5,7 @@ Supported codecs:
  * AAC
  * aptX[-LL/-HD]
  * LDAC
- * Opus
+ * Opus 05 (PipeWire)
  * LC3plus HR
 
 ## Requirements
