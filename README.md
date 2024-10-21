@@ -20,8 +20,11 @@ The AAC codec __requires__ PSRAM. It will only work on ESP32 boards such as WROV
 Use `v5.1.4-a2dp-codecs` branch from https://github.com/cfint/esp-idf
 
 Add additional codecs to to `components/bt/host/bluedroid/external/` in esp-idf.
- *  `master` branch @ https://github.com/cfint/libfreeaptx-esp
- *  `idf_component` branch @ https://github.com/cfint/arduino-fdk-aac
+
+*  `master` branch @ https://github.com/cfint/libfreeaptx-esp
+    *  Add submodule to `components/bt/host/bluedroid/external/libfreeaptx`
+*  `idf_component` branch @ https://github.com/cfint/arduino-fdk-aac
+    * Add submodule to `components/bt/host/bluedroid/external/arduino-fdk-aac`
 
 Build this project as you would an esp-idf project.
 
